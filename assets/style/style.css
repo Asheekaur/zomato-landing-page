@@ -1,7 +1,104 @@
 * {
-  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: Metropolis;
+  font-family: Okra, Helvetica, sans-serif;
   text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+}
+*:focus {
+  outline: none;
+}
+header {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+header div.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 70%;
+  margin: 0px auto;
+}
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+header .logo {
+  width: 280px;
+}
+header div.search-box {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fff;
+  border-radius: 10px;
+}
+div.search-box div {
+  display: flex;
+  align-items: center;
+  margin: 0px 5px;
+  height: 50px;
+}
+div.search-box i {
+  margin: 10px;
+}
+div.search-box div.separator {
+  height: 50%;
+  width: 2px;
+  background-color: #8282829b;
+}
+header div.search-box div.select i {
+  color: #f57082;
+}
+header div.search-box div.input i {
+  color: #828282b7;
+}
+header div.search-box div.input {
+  flex-grow: 80;
+}
+header div.search-box div.input input {
+  align-self: center;
+  font-size: 1rem;
+  width: 100%;
+}
+header div.search-box div.select select {
+  flex-grow: 1;
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: #757575;
+  cursor: pointer;
+}
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+  margin: 0px auto;
+}
+nav .nav-item {
+  color: #fff;
+  margin: 0px 10px;
+}
+nav .nav-item.app {
+  font-size: 0.9rem;
+}
+nav div.nav-item {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+nav div.container {
+  display: flex;
+  padding-right: 2.5rem;
+}
+nav .nav-item:first-child {
+  margin-right: 1.5rem;
 }
