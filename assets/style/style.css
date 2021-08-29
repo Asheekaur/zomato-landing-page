@@ -102,3 +102,37 @@ nav div.container {
 nav .nav-item:first-child {
   margin-right: 1.5rem;
 }
+/* nearby location section */
+section.nearby {
+  height: 40vh;
+}
+section.nearby div.container {
+  text-align: center;
+  padding: 40px 0px;
+  margin: 0px auto;
+  width: 90%;
+}
+section.nearby div.container h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #363636;
+}
+
+section.nearby div.container h3 b {
+  font-weight: 550;
+}
+section.nearby div.box {
+  display: flex;
+  max-width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 22px 15px;
+  margin: 3% 6%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(232, 232, 232);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-weight: 100;
+  color: #363636;
+}
