@@ -6,6 +6,9 @@
   box-sizing: border-box;
   border: none;
 }
+a {
+  color: unset;
+}
 *:focus {
   outline: none;
 }
@@ -267,4 +270,44 @@ section.app div.download div.content img {
   display: inline-block;
   margin-right: 15px;
   margin-top: 0px;
+  cursor: pointer;
 }
+/* explore other options section */
+section.options {
+  min-height: 60vh;
+}
+section.options div.container {
+  width: 80%;
+  padding-left:100px;
+  margin: 6%;
+}
+section.options div.container h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: rgb(41, 40, 40);
+}
+section.options div.container h3 {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: rgb(41, 40, 40);
+}
+section.options div.container div {
+  margin-top: 40px;
+}
+section.options div.container div ul {
+  margin-top: 20px;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+section.options div.container div ul li {
+  font-size: 1rem;
+  font-weight: 100;
+  color: grey !important;
+  margin: 3px 13px;
+  line-height: 1.4rem;
+}
+section.options div.container div ul li:first-child {
+ list-style: none;
+}
+
