@@ -120,7 +120,6 @@ section.nearby div.container h3 {
   font-weight: 100;
   color: #363636;
 }
-
 section.nearby div.container h3 b {
   font-weight: 550;
 }
@@ -414,4 +413,100 @@ footer div.rights {
   letter-spacing: 1px;
   font-weight: 100;
   color: rgb(105, 105, 105);
+}
+/* media query */
+@media (min-width: 576px) {
+  nav {
+    width: 95%;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  header .logo {
+    width: 250px;
+  }
+  header div.search-box {
+    width: 95%;
+  }
+  header div.search-box div.input input {
+    font-size: 0.6rem;
+  }
+  header div.search-box div.select select {
+    font-size: 0.6rem;
+  }
+  section.nearby div.container h3 {
+    font-size: 1.1rem;
+  }
+  section.nearby div.box {
+    max-width: 50%;
+    padding: 18px 12px;
+    margin: 7% 3%;
+    font-size: 1rem;
+  }
+  section.app div.container {
+    width: 100%;
+  }
+  section.app div.container div.form h1 {
+    font-size: 1.8rem;
+  }
+  section.app div.container div.form small {
+    font-size: 1rem;
+  }
+  section.app div.input {
+    display: inline-block;
+  }
+  section.app div.input input {
+    font-size: 1.2rem;
+    margin: 10px 0px 10px 0px;
+    padding: 6px;
+  }
+  section.app div.input button {
+    font-size: 0.6rem;
+  }
+  section.options div.container {
+    width: 90%;
+    padding-left: 0px;
+  }
+  footer {
+    height: 70vh;
+    margin-top: 70px;
+  }
+  footer div.content {
+    width: 90%;
+  }
+  footer div.container {
+    max-width: 85%;
+    margin-left: 30px;
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer div.content div.container {
+    padding: 0px;
+  }
+  footer div.container div h5 {
+    font-size: 0.9rem;
+  }
+  footer div.container div li {
+    font-size: 0.7rem;
+  }
+  footer div.container div.social-links div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div.container div.social-links div.store img {
+    width: 100px;
+    height: 30px;
+    margin: 3px 6px;
+  }
+  footer div.separator {
+    width: 90%;
+    margin: 10px auto;
+  }
+  footer div.rights {
+    width: 90%;
+    font-size: 0.6rem;
+    margin: 5px auto;
+  }
 }
