@@ -415,7 +415,7 @@ footer div.rights {
   color: rgb(105, 105, 105);
 }
 /* media query */
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   nav {
     width: 95%;
   }
