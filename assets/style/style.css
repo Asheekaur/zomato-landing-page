@@ -415,85 +415,168 @@ footer div.rights {
   color: rgb(105, 105, 105);
 }
 /* media query */
-@media (min-width: 576px) {
+@media (max-width: 320px) {
   nav {
     width: 95%;
   }
+  nav div.container {
+  display: none;
+ }
   header h1 {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
   header .logo {
-    width: 250px;
+    width: 150px;
   }
   header div.search-box {
-    width: 95%;
+  display: block;
+    width:80%;
+    background:none;
+  }
+  div.search-box div {
+    height: 35px;
+    margin: 0px;
+  }
+  div.search-box i {
+    margin: 3px;
+  }
+  header div.search-box div.input {
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
   }
   header div.search-box div.input input {
     font-size: 0.6rem;
   }
+  header div.search-box div.select{
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px;
+  }
   header div.search-box div.select select {
     font-size: 0.6rem;
+    padding-right:0rem;
+  }
+  div.search-box div.separator {
+   display: none;
+  }
+  section.nearby {
+    height: 30vh;
   }
   section.nearby div.container h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   section.nearby div.box {
-    max-width: 50%;
-    padding: 18px 12px;
-    margin: 7% 3%;
-    font-size: 1rem;
+    max-width: 90%;
+    padding:14px 0px;
+    margin: 7% 7%;
+    font-size: 0.8rem;
   }
   section.app div.container {
     width: 100%;
+    margin: 30px auto 5px auto;
+    text-align: center;
+  }
+  section.app div.container img {
+   display: none;
   }
   section.app div.container div.form h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   section.app div.container div.form small {
-    font-size: 1rem;
+   font-size: 1rem;
   }
   section.app div.input {
     display: inline-block;
   }
   section.app div.input input {
-    font-size: 1.2rem;
-    margin: 10px 0px 10px 0px;
-    padding: 6px;
+    font-size: 0.9rem;
+    margin: 6px 0px 8px 0px;
+    padding: 10px;
   }
   section.app div.input button {
     font-size: 0.6rem;
+    padding: 14px;
+  }
+  section.app div.download div.content img {
+    max-width: 110px;
+  }
+  div.radio {
+    margin-left: 10px;
   }
   section.options div.container {
-    width: 90%;
+    width: 80%;
     padding-left: 0px;
   }
+  section.options div.container h2 {
+    font-size: 1.3rem;
+  }
+  section.options div.container h3 {
+    font-size: 1.1rem;
+   }
+   section.options div.container div ul li {
+    font-size: 0.6rem;
+    margin: 0px 13px;
+  }
   footer {
-    height: 70vh;
-    margin-top: 70px;
+    height: 96vh;
+    margin-top: 50px;
   }
   footer div.content {
     width: 90%;
-  }
-  footer div.container {
-    max-width: 85%;
-    margin-left: 30px;
-    display: flex;
-    padding: 0px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: block;
   }
   footer div.content div.container {
-    padding: 0px;
+   width: 70%;
+   justify-content: space-around;
+   margin: 0px;
   }
-  footer div.container div h5 {
+  footer div.content div.container div.country-name {
+    font-size: 1rem;
+    width: 90px;
+    height: 30px;
+    margin: 20px 0px 0px 0px ;
+  }
+  footer div.content div.container div.country-name img {
+    width: 18px;
+    height: 18px;
+  }
+  footer div.content div.container div.language {
     font-size: 0.9rem;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+  }
+  footer div.content div.container div i {
+    font-size: 0.8rem;
+    margin: 2px 6px;
+  }
+  footer div.content div.container div.language img {
+    width: 18px;
+    height: 18px;
+  }
+  footer div.container {
+    max-width: 75%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    flex-wrap: wrap;
+  }footer div.container div h5 {
+    font-size: 0.8rem;
+    margin: 6px 0px;
   }
   footer div.container div li {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+  footer div.container div.social-links h5 {
+    margin: 30px 70px 8px 70px ;
   }
   footer div.container div.social-links div {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   footer div.container div.social-links div.store img {
     width: 100px;
@@ -502,7 +585,7 @@ footer div.rights {
   }
   footer div.separator {
     width: 90%;
-    margin: 10px auto;
+    margin: 15px auto;
   }
   footer div.rights {
     width: 90%;
