@@ -415,13 +415,112 @@ footer div.rights {
   color: rgb(105, 105, 105);
 }
 /* media query */
-@media (max-width: 420px) {
+@media (max-width: 1400px) {
+  section.app div.container {
+    width: 70%;
+  }
+  footer div.separator {
+    width: 75%;
+    margin: 20px auto 0px auto;
+  }
+  footer div.rights {
+    width: 74%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 1200px) {
+  header div.search-box {
+    width: 75%;
+  }
+  section.nearby div.box {
+    max-width: 30%;
+    padding: 20px 8px;
+    margin: 5% 2%;
+  }
+  section.app div.container {
+    width: 80%;
+  }
+  section.options div.container {
+    width: 90%;
+    padding-left: 0px;
+  }
+  footer div.content {
+    width: 84%;
+  }
+  footer div.container {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  footer div.separator {
+    width: 85%;
+    margin: 20px auto 0px auto;
+  }
+  footer div.rights {
+    width: 85%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2.3rem;
+  }
+  header .logo {
+    width: 260px;
+  }
+  header div.search-box {
+    width: 90%;
+  }
   nav {
     width: 95%;
   }
+  section.nearby div.box {
+    max-width: 35%;
+    margin: 5% 1%;
+  }
+  section.app div.container {
+    width: 100%;
+  }
+  footer div.content {
+    width: 87%;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header div.search-box div.input input {
+    font-size: 0.8rem;
+  }
+  header div.search-box div.select select {
+    font-size: 0.8rem;
+  }
+  section.nearby div.box {
+    max-width: 45%;
+    margin: 4% 5%;
+  }
+  section.app div.container {
+    width: 90%;
+  }
+  footer div.content {
+    width: 90%;
+  }
+  footer div.container {
+    max-width: 95%;
+    margin-left: 20px;
+  }
+  footer div.separator {
+    width: 90%;
+    margin: 20px auto 0px auto;
+  }
+  footer div.rights {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 576px) {
   nav div.container {
-  display: none;
- }
+    display: none;
+  }
   header h1 {
     font-size: 0.9rem;
   }
@@ -429,9 +528,9 @@ footer div.rights {
     width: 150px;
   }
   header div.search-box {
-  display: block;
-    width:80%;
-    background:none;
+    display: block;
+    width: 80%;
+    background: none;
   }
   div.search-box div {
     height: 35px;
@@ -445,21 +544,14 @@ footer div.rights {
     border-radius: 10px;
     padding: 5px;
   }
-  header div.search-box div.input input {
-    font-size: 0.6rem;
-  }
-  header div.search-box div.select{
+  header div.search-box div.select {
     background: #fff;
     border-radius: 10px;
     padding: 5px;
-    margin: 20px 0px;
-  }
-  header div.search-box div.select select {
-    font-size: 0.6rem;
-    padding-right:0rem;
+    margin-bottom: 20px;
   }
   div.search-box div.separator {
-   display: none;
+    display: none;
   }
   section.nearby {
     height: 30vh;
@@ -468,9 +560,9 @@ footer div.rights {
     font-size: 1rem;
   }
   section.nearby div.box {
-    max-width: 90%;
-    padding:14px 0px;
-    margin: 7% 7%;
+    max-width: 60%;
+    padding: 14px 0px;
+    margin: 7% 2%;
     font-size: 0.8rem;
   }
   section.app div.container {
@@ -479,13 +571,13 @@ footer div.rights {
     text-align: center;
   }
   section.app div.container img {
-   display: none;
+    display: none;
   }
   section.app div.container div.form h1 {
     font-size: 1.6rem;
   }
   section.app div.container div.form small {
-   font-size: 1rem;
+    font-size: 1rem;
   }
   section.app div.input {
     display: inline-block;
@@ -503,7 +595,7 @@ footer div.rights {
     max-width: 110px;
   }
   div.radio {
-    margin-left: 10px;
+    margin-left: 55px;
   }
   section.options div.container {
     width: 80%;
@@ -514,29 +606,29 @@ footer div.rights {
   }
   section.options div.container h3 {
     font-size: 1.1rem;
-   }
-   section.options div.container div ul li {
+  }
+  section.options div.container div ul li {
     font-size: 0.6rem;
     margin: 0px 13px;
   }
   footer {
-    height: 96vh;
+    height: 80vh;
     margin-top: 50px;
   }
   footer div.content {
-    width: 90%;
+    width: 85%;
     display: block;
   }
   footer div.content div.container {
-   width: 70%;
-   justify-content: space-around;
-   margin: 0px;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0px;
   }
   footer div.content div.container div.country-name {
     font-size: 1rem;
     width: 90px;
     height: 30px;
-    margin: 20px 0px 0px 0px ;
+    margin: 20px 0px 0px 0px;
   }
   footer div.content div.container div.country-name img {
     width: 18px;
@@ -563,7 +655,8 @@ footer div.rights {
     justify-content: space-between;
     padding: 0px;
     flex-wrap: wrap;
-  }footer div.container div h5 {
+  }
+  footer div.container div h5 {
     font-size: 0.8rem;
     margin: 6px 0px;
   }
@@ -571,7 +664,7 @@ footer div.rights {
     font-size: 0.6rem;
   }
   footer div.container div.social-links h5 {
-    margin: 30px 70px 8px 70px ;
+    margin: 30px 70px 8px 70px;
   }
   footer div.container div.social-links div {
     display: flex;
@@ -583,13 +676,29 @@ footer div.rights {
     height: 30px;
     margin: 3px 6px;
   }
-  footer div.separator {
-    width: 90%;
-    margin: 15px auto;
-  }
   footer div.rights {
-    width: 90%;
     font-size: 0.6rem;
-    margin: 5px auto;
+  }
+}
+@media (max-width: 420px) {
+  header div.search-box {
+    width: 90%;
+  }
+  header div.search-box div.input input {
+    font-size: 0.7rem;
+  }
+  header div.search-box div.select select {
+    font-size: 0.7rem;
+  }
+  section.nearby div.box {
+    max-width: 80%;
+    margin: 7% 4%;
+  }
+
+  footer {
+    height: 98vh;
+  }
+  footer div.content div.container {
+    width: 90%;
   }
 }
